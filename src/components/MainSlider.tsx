@@ -77,7 +77,7 @@ const MainSlider = ({ data }: { data: T_Banner[] }) => {
       event.preventDefault();
       if (currentIndex === data.length - 1) {
         // If the last slide is reached, scroll vertically
-        window.scrollBy({ top: event.deltaY, behavior: "smooth" });
+        window.scrollBy({ top: event.deltaY });
       } else {
         if (event.deltaY < 0) {
           slider?.slickPrev();
